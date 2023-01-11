@@ -5,7 +5,7 @@ import SignUpView from "../views/SignUpView.vue"
 import TrackingView from "../views/TrackingView.vue"
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASEURL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [{
     path: "/",
     name: 'home',
@@ -14,7 +14,7 @@ const router = createRouter({
   },
   {
     path: '/services',
-    name: 'about',
+    name: 'services',
     component: ServicesView
 
   },
@@ -27,6 +27,7 @@ const router = createRouter({
     path: '/tracking',
     name:'tracking',
     component: TrackingView
+  }
 ]
  
 })
