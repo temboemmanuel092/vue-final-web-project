@@ -1,86 +1,31 @@
 <template>
-    <div id="app">
-    <div id="alert" v-if="alert">{{ alert }}</div>
-
-    <form @submit.prevent="signupWithPassword">
-      <label>
-        Email address
-        <input type="email" v-model="email" />
-      </label><br>
-      <label>
-        Account name (custom field)
-        <input type="text" v-model="accountName" />
-      </label><br>
-      <label>
-        Password
-        <input type="password" v-model="password" />
-      </label><br>
-      <label>
-        Verify password
-        <input type="password" v-model="passwordVerify" />
-      </label><br>
-      <button type="submit">Sign up</button>
+  <div>
+    <h1>Sign up here</h1>
+    <form action="" class="login-form">
+      <label for="username"><strong>Email address</strong></label><br>
+      <input type="text" placeholder="enter your email address here"><br>
+      <label><strong>Password</strong></label><br>
+      <input type="password" placeholder="enter your password"><br>
+      <button>Sign up</button>
+      <button>Sign in</button>
     </form>
-
-    <p>or</p>
-
-    <button @click.prevent="signupWithSSO">Sign up with Google</button>
+    <h1>Sign in</h1>
   </div>
 </template>
 
-<script>
-  // Initialize Userfront
-  Userfront.init("demo1234");
-
-  export default {
-    data() {
-      return {
-        email: "",
-        accountName: "",
-        password: "",
-        passwordVerify: "",
-        alert: "",
-      };
-    },
-    methods: {
-      // Sign up with the form's email and password
-      signupWithPassword() {
-        // Reset the alert to empty
-        this.alert = "";
-        // Verify that the passwords match
-        if (this.password !== this.passwordVerify) {
-          this.alert = "Passwords must match";
-          return;
-        }
-        // Call Userfront.signup()
-        Userfront.signup({
-          method: "password",
-          email: this.email,
-          password: this.password,
-          data: {
-            accountName: this.accountName,
-          },
-        }).catch((error) => {
-          this.alert = error.message;
-        });
-      },
-      // Sign up with SSO (google)
-      signupWithSSO() {
-        Userfront.signup({ method: "google" });
-      },
-    },
-  };
-</script>
-
 <style scoped>
-  button,
-  input {
-    display: block;
-    margin-bottom: 10px;
+  .login-form {
+    width:100%;
+    margin: 20px;
+    padding:30px;
+    border-radius: 10px;
+    background-color: rgb(96, 181, 202);
+    align-items: center;
+    
   }
 
-  #alert {
-    color: red;
-    margin-bottom: 10px;
+  h1 {
+    text-align: center;
+    color: crimson;
   }
 </style>
