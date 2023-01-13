@@ -13,6 +13,7 @@
     "@userfront/core": "^0.4.7",
     "roboto-fontface": "*",
     "vue": "^3.2.45",
+    "vue-icon": "^2.3.0",
     "vue-router": "^4.1.6",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"

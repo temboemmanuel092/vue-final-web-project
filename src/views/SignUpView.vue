@@ -21,6 +21,7 @@
     border-radius: 10px;
     background-color: rgb(96, 181, 202);
     align-items: center;
+    border: 5px solid;
     
   }
 

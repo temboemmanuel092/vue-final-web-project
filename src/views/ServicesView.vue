@@ -14,5 +14,6 @@
 <style scoped>
     h1 {
         text-align: center;
+        border: 10px solid;
     }
 </style>
