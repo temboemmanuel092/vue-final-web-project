@@ -1,25 +1,35 @@
 <template>
-    <div class="wrapper">
-        <div>
-            <p> Are you trying to buy anything from the USA?</p>
-        </div>
-        <div> 
-            <p> Do you want us to buy you something from the USA? </p>
-        </div>
-        <div> 
-            <p>Do you want it delivered to your place anywhere within Zambia?</p>
-        </div>
-        <div>
-            <p>Tell us what you want and we shall? </p>
-        </div>
-       
-    </div>
+  <div>
+    <ul class="container">
+      <li>
+        <p> Are you interested in buying anything from USA?</p>
+      </li>
+      <li> 
+        <p> Would you like us to buy purchase somwthing for for from USA</p>
+      </li>
+      <li> 
+        <p> We deliver to any parts of the Country in Zambia</p>
+      </li>
+      <li>
+        <p> Tell us what you want and we shall do the rest</p>
+      </li>
+    </ul>
+  </div>
 </template>
-<script></script>
+
+<script setup>
+</script>
+
 
 <style scoped>
-    .wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6px 14px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
 }
+
 </style>

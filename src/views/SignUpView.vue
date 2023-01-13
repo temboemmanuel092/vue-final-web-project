@@ -2,14 +2,14 @@
   <div>
     <h1>Sign up here</h1>
     <form action="" class="login-form">
-      <label for="username"><strong>Email address</strong></label><br>
+      <label for="username" class="label-1"><strong>Email address</strong></label><br>
       <input type="text" placeholder="enter your email address here"><br>
       <label><strong>Password</strong></label><br>
       <input type="password" placeholder="enter your password"><br>
       <button>Sign up</button>
+
       <button>Sign in</button>
     </form>
-    <h1>Sign in</h1>
   </div>
 </template>
 
