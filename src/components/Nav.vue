@@ -1,7 +1,7 @@
 
 <template>
     <div>
-        <nav>
+        <nav class="nav-bar">
             <ul class="nav-list">
                 <li>
                     <router-link :to="{ name: 'home' }">Home</router-link>
@@ -28,16 +28,25 @@
 </script>
 
 <style scoped>
-    .nav-list {
+    ul {
+        list-style-type: none;
+    }
+    ul {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        font-size: 30px;
     }
-
-    nav {
-        background-color: aliceblue;
-        margin: 30px;
+    ul {
+        height: 70px;
+        width: 100%;
+       border: 2px solid;
+    }
+    ul {
+        border-radius: 5px;
+        margin: 20px;
         padding: 20px;
-        border-radius: 10px;
+        padding-top: 40px;
     }
 </style>
+
+<!--  -->

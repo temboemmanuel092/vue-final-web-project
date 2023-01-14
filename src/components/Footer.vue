@@ -10,7 +10,7 @@
 
 <style scoped>
     .footer-list {
-  position: fixed;
+  position:sticky;
   left: 0;
   bottom: 0;
   width: 92%;
