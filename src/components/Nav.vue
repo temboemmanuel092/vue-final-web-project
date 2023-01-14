@@ -1,6 +1,6 @@
 
 <template>
-    <div>
+    <div class="first-div">
         <nav class="nav-bar">
             <ul class="nav-list">
                 <li>
@@ -28,18 +28,24 @@
 </script>
 
 <style scoped>
+    .first-div {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     ul {
         list-style-type: none;
     }
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         font-size: 30px;
     }
     ul {
         height: 70px;
-        width: 100%;
-       border: 2px solid;
+        border: 10px double gold;
+        outline: 5px solid purple;
+        outline-offset: 5px;
     }
     ul {
         border-radius: 5px;
@@ -49,4 +55,3 @@
     }
 </style>
 
-<!--  -->
