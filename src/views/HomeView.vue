@@ -97,7 +97,7 @@
     .description-text {
         font-size: 20px;
         font-weight: bold;
-        text-decoration: brown;
+        
     }
    
 
