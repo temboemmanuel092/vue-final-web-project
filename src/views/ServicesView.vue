@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h1>Services View</h1>
+        <h1> services</h1>
+        
+
     </div>
 
     <div class="card">
@@ -74,6 +76,7 @@
 <style scoped>
     h1 {
         text-align: center;
+        border: 10px solid;
     }
 .card {
     width: 100%;
